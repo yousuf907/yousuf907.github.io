@@ -93,13 +93,10 @@
 						<h2>ABOUT ME</h2>
 						<p align="justify"> Hello! I am a PhD student in the <a href="http://www.cis.rit.edu/">Chester F. Carlson Center for Imaging Science</a>
 							at the <a href="https://www.rit.edu/">Rochester Institute of Technology (RIT)</a> in Rochester, NY.
-
 							I currently work in the <a href="http://klab.cis.rit.edu/">Machine and Neuromorphic Perception Laboratory</a> (a.k.a Klab) under the
 							supervision of <a href="https://chriskanan.com/">Dr. Christopher Kanan</a>. 
 							My current research focuses on deep learning with an emphasis on continual/ lifelong machine learning.
-							My works have been published in CVPRW and I have multiple papers under review that 
-							advance the state-of-the-art in continual learning.
-							
+							My works have been published in TMLR and CVPRW that advance the state-of-the-art in continual learning.
 						</p>
 						<p align="justify">
 							I received an MS in Electrical Engineering from <a href="https://manoa.hawaii.edu/">University of Hawaii</a> 
@@ -109,7 +106,7 @@
 						</p>
 						
 						<p align="justify">
-						You can find my <span style="color:#25d399;">CV <a href="files/CV_Yousuf.pdf">here.</a></span>
+						You can find my <span style="color:#25d399;">CV <a href="files/Resume_Yousuf.pdf">here.</a></span>
 						</p>
 					</div>
 				</section>
@@ -119,22 +116,23 @@
 					<div class="container">
 						<h2>NEWS</h2>
 						<p>	
+							<b>Nov 2023:</b> Our paper <a href="https://arxiv.org/abs/2303.10725"><span style="color:#25d399;">"SIESTA: Efficient Online Continual Learning with Sleep"</span></a>
+							got accepted at Transactions on Machine Learning Research (TMLR) 2023! <br>
+							<b>Nov 2023:</b> Won the "Best Student Abstract Award" at
+							<a href="https://ewh.ieee.org/r1/rochester/sp/WNYISPW2023.html"><span style="color:#25d399;">IEEE 
+							Western New York Image & Signal Processing Workshop 2023</span></a>. <br>
+							<b>Oct 2023:</b> Gave an invited talk on "Towards Efficient Continual Learning in Deep Neural Networks" at 
+							<a href="https://www.rit.edu/events/chai-advanced-phd-student-talk-md-yousuf-harun-chester-f-carlson-center-imaging-science-rit"><span style="color:#25d399;">RIT Center 
+							for Human-aware Artificial Intelligence (CHAI) Seminar Series</span></a>. <br>
 							<b>April 2023:</b> Our paper <a href="https://arxiv.org/abs/2303.18171"><span style="color:#25d399;">"How Efficient Are Today's Continual Learning Algorithms?"</span></a>
 							got accepted in the CLVision Workshop at CVPR 2023! <br>
-							
 							<b>Jan 2022:</b> Got accepted in the <a href="https://www.rit.edu/nrtai/"><span style="color:#25d399;">AWARE-AI NRT</span></a> program from RIT as a Trainee!<br>
-
 							<b>May 2021:</b> Joined the <a href="http://klab.cis.rit.edu/"><span style="color:#25d399;">Machine and Neuromorphic Perception Laboratory</span></a> as a PhD student. <br>
-							
 							<b>Aug 2020:</b> Got admitted to the <a href="https://www.rit.edu/"><span style="color:#25d399;">Rochester Institute of Technology</span></a> Imaging Science Ph.D. program! <br>
-							
 							<b>May 2020:</b> Successfully obtained my MS in Electrical Engineering from <a
 								href="https://manoa.hawaii.edu"><span style="color:#25d399;">University of Hawaii</span></a>.<br>
-
 							<b>Aug 2018:</b> Got admitted to the <a href="https://manoa.hawaii.edu"><span style="color:#25d399;">University of Hawaii</span></a> Electrical Engineering MS program! <br>
-
 							<b>June 2017:</b> Joined <a href="https://www.dutchbanglabank.com"><span style="color:#25d399;">Dutch-Bangla Bank</span></a> as an Electrical Engineer.<br>
-							
 							<b>May 2016:</b> Successfully obtained my BS in Electrical & Electronic Engineering from <a
 								href="https://www.kuet.ac.bd/"><span style="color:#25d399;">Khulna University of Engineering & Technology</span></a> in Khulna, Bangladesh.<br>
 						</p>
@@ -147,7 +145,7 @@
 						<h2>RESEARCH</h2>
 						<div class="features">
 							<article>
-								<a class="image"><img src="images/compute_replay.png" alt="" /></a>
+								<a class="image"><img src="images/grasp.png" alt="" /></a>
 								<div class="inner">
 									<h4>GRASP: A Rehearsal Policy for Efficient Online Continual Learning</h4>
 									<p><strong>Md Yousuf Harun</strong>, Jhair Gallardo, Christopher Kanan</p>
@@ -163,7 +161,7 @@
 							</article>
 
 							<article>
-								<a class="image"><img src="images/dip_intro.png" alt="" /></a>
+								<a class="image"><img src="images/sgm.png" alt="" /></a>
 								<div class="inner">
 									<h4>Overcoming the Stability Gap in Continual Learning</h4>
 									<p><strong>Md Yousuf Harun</strong>, Christopher Kanan</p>
@@ -183,20 +181,24 @@
 							</article>
 
 							<article>
-								<a class="image"><img src="images/siesta.png" alt="" /></a>
+								<a class="image"><img src="images/siesta_summary.png" alt="" /></a>
 								<div class="inner">
 									<h4>SIESTA: Efficient Online Continual Learning with Sleep</h4>
 									<p><strong>Md Yousuf Harun</strong>, Jhair Gallardo, Tyler L. Hayes, Ronald Kemker, Christopher Kanan</p>
 									
-									<p align="justify"> SIESTA is a wake/sleep based online continual learning algorithm and designed to be computationally 
-										efficient for resource-constrained applications such as edge devices, mobile phones, robots, AR-VR and so on. 
-										It is capable of rapid online learning and inference while awake, but has periods of sleep where it performs 
-										offline memory consolidation.									
+									<p align="justify"> For continual learning (CL) to make a real-world impact, CL systems need to provide 
+										computational efficiency and rival traditional offline learning systems retrained from scratch. Towards 
+										that goal, we propose a novel online CL algorithm named SIESTA. SIESTA uses a wake/sleep framework for 
+										training, which is well aligned to the needs of on-device learning. SIESTA is far more computationally efficient 
+										than existing methods, enabling CL on ImageNet-1K in under 2 hours; moreover, it achieves "zero forgetting" 
+										by matching the performance of the offline learner, a milestone critical to driving adoption of CL in 
+										real-world applications.									
 									</p>
-									<!--<h4>Under Review 2023</h4>-->
+									<h4>TMLR 2023</h4>
 									<h3>
 										<!--<a href="https://www.bmvc2021-virtualconference.com/assets/papers/0636.pdf" onclick="getOutboundLink('https://www.bmvc2021-virtualconference.com/assets/papers/0636.pdf'); return false;" target="_blank"><button class="button">BMVC</button></a>-->
 										<a href="https://arxiv.org/abs/2303.10725" onclick="getOutboundLink('https://arxiv.org/abs/2303.10725'); return false;" target="_blank"><button class="button">arXiv</button></a>
+										<a href="https://openreview.net/pdf?id=MqDVlBWRRV" onclick="getOutboundLink('https://openreview.net/pdf?id=MqDVlBWRRV'); return false;" target="_blank"><button class="button">Paper</button></a>
 										<a href="https://github.com/yousuf907/SIESTA" onclick="getOutboundLink('https://github.com/yousuf907/SIESTA'); return false;" target="_blank"><button class="button">Code</button></a>
 										<a href="https://yousuf907.github.io/siestasite" onclick="getOutboundLink('https://yousuf907.github.io/siestasite'); return false;" target="_blank"><button class="button">Project-page</button></a>
 									</h3>
@@ -204,7 +206,7 @@
 							</article>
 
 							<article>
-								<a class="image"><img src="images/clvision_barplot_updated2.png" alt="" /></a>
+								<a class="image"><img src="images/clvision.png" alt="" /></a>
 								<div class="inner">
 									<h4>How Efficient Are Today's Continual Learning Algorithms?</h4>
 									<p><strong>Md Yousuf Harun</strong>, Jhair Gallardo, Tyler L. Hayes, Christopher Kanan</p>
@@ -246,15 +248,15 @@
 									Overcoming the Stability Gap in Continual Learning
 								</a>. ArXiv, 2023
 							</li>
-
-							<li><strong>M.Y. Harun</strong>, J. Gallardo, T.L. Hayes, R. Kemker, C. Kanan.
-								<a href="https://arxiv.org/abs/2303.10725">
-									SIESTA: Efficient Online Continual Learning with Sleep
-								</a>. ArXiv, 2023
-							</li>
 						</ul>
 						<h1>Peer-Reviewed Papers</h1>
 						<ul>
+							<li><strong>M.Y. Harun</strong>, J. Gallardo, T.L. Hayes, R. Kemker, C. Kanan.
+								<a href="https://arxiv.org/abs/2303.10725">
+									SIESTA: Efficient Online Continual Learning with Sleep
+								</a>. In: Transactions on Machine Learning Research (TMLR), 2023
+							</li>
+
 							<li><strong>M.Y. Harun</strong>, J. Gallardo, T.L. Hayes, C. Kanan.
 								<a href="https://arxiv.org/abs/2303.18171">
 									How Efficient Are Today's Continual Learning Algorithms?
