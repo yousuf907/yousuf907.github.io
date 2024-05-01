@@ -91,18 +91,18 @@
 					</div>
 					<div class="container">
 						<h2>ABOUT ME</h2>
-						<p align="justify"> Hello! I am a PhD student in the <a href="http://www.cis.rit.edu/">Chester F. Carlson Center for Imaging Science</a>
+						<p align="justify"> Hello! I am a 4th year PhD student in the <a href="http://www.cis.rit.edu/">Chester F. Carlson Center for Imaging Science</a>
 							at the <a href="https://www.rit.edu/">Rochester Institute of Technology (RIT)</a> in Rochester, NY.
-							I currently work in the <a href="http://klab.cis.rit.edu/">Machine and Neuromorphic Perception Laboratory</a> (a.k.a Klab) under the
+							I currently work in the <a href="https://chriskanan.com/klab/">kLab</a> under the
 							supervision of <a href="https://chriskanan.com/">Dr. Christopher Kanan</a>. 
 							My current research focuses on deep learning with an emphasis on continual/ lifelong machine learning.
-							My works have been published in TMLR and CVPRW that advance the state-of-the-art in continual learning.
+							My works have been published in TMLR, CVPRW, and CoLLAs that advance the state-of-the-art in continual learning.
 						</p>
 						<p align="justify">
 							I received an MS in Electrical Engineering from <a href="https://manoa.hawaii.edu/">University of Hawaii</a> 
 							and a BS in Electrical Engineering from <a href="https://www.kuet.ac.bd/">Khulna University of Engineering and Technology</a>.
 							During MS, I worked on deep learning applied to medical imaging.
-							My prior works have been published in IEEE NanoMed, ASRM conferences and Reproductive BioMedicine Journal.
+							My prior works have been published in IEEE NanoMed, ASRM conferences, and Reproductive BioMedicine Journal.
 						</p>
 						
 						<p align="justify">
@@ -116,6 +116,8 @@
 					<div class="container">
 						<h2>NEWS</h2>
 						<p>	
+							<b>April 2024:</b> Our paper <a href="https://arxiv.org/abs/2308.13646"><span style="color:#25d399;">"GRASP: A Rehearsal Policy for Efficient Online Continual Learning"</span></a>
+							got accepted at the Conference on Lifelong Learning Agents (CoLLAs) 2024! <br>
 							<b>Nov 2023:</b> Our paper <a href="https://arxiv.org/abs/2303.10725"><span style="color:#25d399;">"SIESTA: Efficient Online Continual Learning with Sleep"</span></a>
 							got accepted at Transactions on Machine Learning Research (TMLR) 2023! <br>
 							<b>Nov 2023:</b> Won the "Best Student Abstract Award" at
@@ -144,23 +146,26 @@
 						<h2>RESEARCH</h2>
 						<div class="features">
 							<article>
-								<a class="image"><img src="images/grasp.png" alt="" /></a>
+								<a class="image"><img src="images/compute_replay_updated.png" alt="" /></a>
 								<div class="inner">
 									<h4>GRASP: A Rehearsal Policy for Efficient Online Continual Learning</h4>
-									<p><strong>Md Yousuf Harun</strong>, Jhair Gallardo, Christopher Kanan</p>
+									<p><strong>Md Yousuf Harun</strong>, Jhair Gallardo, Junyu Chen, Christopher Kanan</p>
 
 									<p align="justify"> GRASP is a dynamic rehearsal policy that progressively selects harder samples over time to efficiently
 										update deep neural networks on large-scale data streams in continual learning settings. GRASP is the first method to outperform
-										 uniform class-balanced in both large-scale vision and NLP datasets.
+										uniform balanced sampling in both large-scale vision and NLP datasets.
 									</p>
+									<h4>CoLLAs 2024</h4>
 									<h3>
 										<a href="https://arxiv.org/abs/2308.13646" onclick="getOutboundLink('https://arxiv.org/abs/2308.13646'); return false;" target="_blank"><button class="button">arXiv</button></a>
+										<a href="https://github.com/yousuf907/GRASP" onclick="getOutboundLink('https://github.com/yousuf907/GRASP'); return false;" target="_blank"><button class="button">Code</button></a>
+										<a href="https://yousuf907.github.io/graspsite" onclick="getOutboundLink('https://yousuf907.github.io/graspsite'); return false;" target="_blank"><button class="button">Project-page</button></a>
 									</h3>
 								</div>
 							</article>
 
 							<article>
-								<a class="image"><img src="images/sgm.png" alt="" /></a>
+								<a class="image"><img src="images/sgm_intro.png" alt="" /></a>
 								<div class="inner">
 									<h4>Overcoming the Stability Gap in Continual Learning</h4>
 									<p><strong>Md Yousuf Harun</strong>, Christopher Kanan</p>
@@ -190,7 +195,7 @@
 										that goal, we propose a novel online CL algorithm named SIESTA. SIESTA uses a wake/sleep framework for 
 										training, which is well aligned to the needs of on-device learning. SIESTA is far more computationally efficient 
 										than existing methods, enabling CL on ImageNet-1K in under 2 hours; moreover, it achieves "zero forgetting" 
-										by matching the performance of the offline learner, a milestone critical to driving adoption of CL in 
+										by matching the performance of the joint model (upper bound), a milestone critical to driving adoption of CL in 
 										real-world applications.									
 									</p>
 									<h4>TMLR 2023</h4>
@@ -205,7 +210,7 @@
 							</article>
 
 							<article>
-								<a class="image"><img src="images/clvision.png" alt="" /></a>
+								<a class="image"><img src="images/plot_compute_icml.png" alt="" /></a>
 								<div class="inner">
 									<h4>How Efficient Are Today's Continual Learning Algorithms?</h4>
 									<p><strong>Md Yousuf Harun</strong>, Jhair Gallardo, Tyler L. Hayes, Christopher Kanan</p>
@@ -234,14 +239,8 @@
 				<section id="publications">
 					<div class="container">
 						<h2>PUBLICATIONS</h2>
-						<h1>Pre-Prints</h1>
+						<h1>Pre-Print</h1>
 						<ul>
-							<li><strong>M.Y. Harun</strong>, J. Gallardo, C. Kanan.
-								<a href="https://arxiv.org/abs/2308.13646">
-									GRASP: A Rehearsal Policy for Efficient Online Continual Learning
-								</a>. ArXiv, 2023
-							</li>
-
 							<li><strong>M.Y. Harun</strong>, C. Kanan.
 								<a href="https://arxiv.org/abs/2306.01904">
 									Overcoming the Stability Gap in Continual Learning
@@ -250,6 +249,12 @@
 						</ul>
 						<h1>Peer-Reviewed Papers</h1>
 						<ul>
+							<li><strong>M.Y. Harun</strong>, J. Gallardo, J. Chen, C. Kanan.
+								<a href="https://arxiv.org/abs/2308.13646">
+									GRASP: A Rehearsal Policy for Efficient Online Continual Learning
+								</a>. In: Conference on Lifelong Learning Agents (CoLLAs), 2024
+							</li>
+
 							<li><strong>M.Y. Harun</strong>, J. Gallardo, T.L. Hayes, R. Kemker, C. Kanan.
 								<a href="https://arxiv.org/abs/2303.10725">
 									SIESTA: Efficient Online Continual Learning with Sleep
@@ -288,12 +293,12 @@
 								</a>. In: American Society for Reproductive Medicine (ASRM), 2019
 							</li>
 						</ul>
-						<h1>Theses</h1>
+						<h1>Dissertation</h1>
 						<ul>
 							<li><strong>M.Y. Harun</strong>.
 								<a href="https://scholarspace.manoa.hawaii.edu/handle/10125/68984">
 									Medical Image Segmentation for Embryo Image Analysis
-								</a>. M.S. Thesis, University of Hawaii, 2018
+								</a>. MS Dissertation, University of Hawaii, 2018
 							</li>
 						</ul>
 					</div>
